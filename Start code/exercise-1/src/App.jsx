@@ -2,7 +2,7 @@ import React,  {useState} from "react";
 function App() {
   /* You will need to use a boolean state to manage the weather */
     
-    const [rainColor, setRainColor] = useState('blue');
+    
   function onSunClick() {
     // Complete this code when we click on Sunny Time
     const [sunColor, setSunColor] = useState('yellow');
@@ -11,7 +11,7 @@ function App() {
 
   function onRainClick() {
     // Complete this code when we click on Sunny Time
-
+    const [rainColor, setRainColor] = useState('blue');
   }
 
   function getTitle() {
@@ -33,33 +33,3 @@ function App() {
 }
 
 export default App;
-
-// export default function App() {
-//   return (
-//     <Toolbar
-//       onPlayMovie={() => alert('Playing!')}
-//       onUploadImage={() => alert('Uploading!')}
-//     />
-//   );
-// }
-
-// function Toolbar({ onPlayMovie, onUploadImage }) {
-//   return (
-//     <div>
-//       <Button onClick={onPlayMovie}>
-//         Play Movie
-//       </Button>
-//       <Button onClick={onUploadImage}>
-//         Upload Image
-//       </Button>
-//     </div>
-//   );
-// }
-
-// function Button({ onClick, children }) {
-//   return (
-//     <button onClick={onClick}>
-//       {children}
-//     </button>
-//   );
-// }
